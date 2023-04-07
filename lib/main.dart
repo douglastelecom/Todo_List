@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
     Scaffold screen = Scaffold(
       appBar: AppBar(
         title: Text("Lista de Tarefas"),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.pinkAccent,
         centerTitle: true,
       ),
       body: Column(
@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
                     controller: _todoController,
                     decoration: InputDecoration(
                       labelText: "Nova Tarefa",
-                      labelStyle: TextStyle(color: Colors.blueAccent),
+                      labelStyle: TextStyle(color: Colors.pinkAccent),
                     ),
                   ),
                 ),
@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
     return Dismissible(
       key: Key(DateTime.now().millisecondsSinceEpoch.toString()),
       background: Container(
-        color: Colors.red,
+        color: Colors.blue,
         child: Align(
           alignment: Alignment(-0.9, 0.0),
           child: Icon(
